@@ -4,6 +4,6 @@ COPY ./nginx.repo /etc/yum.repos.d/
 RUN yum makecache
 RUN yum install -y nginx
 RUN yum -y install vim 
-RUN echo "Hello! This is nginx server " > /usr/share/nginx/html/index.html
+RUN echo "Hello!!!! This is nginx server01. " > /usr/share/nginx/html/index.html
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
